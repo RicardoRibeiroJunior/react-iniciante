@@ -1,16 +1,15 @@
-//import react from "react";
+import react from "react";
 import { useParams } from "react-router-dom";
+import PromotionForm from "../../../Components/Promotion/Form/Form";
+import UIContainer from "../../../Components/UI/Container/Container";
 
 export default function PagesPromotionForm(){
 
     const {id} = useParams();
 
     return(
-        <div>
-            FORM
-            { id && (
-                <div>id: {id}</div>
-            )}
-        </div>
+        <UIContainer>
+            <PromotionForm/>
+        </UIContainer>
     )
 }
